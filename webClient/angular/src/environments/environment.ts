@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   region: 'us-east-2',
-  userPoolId: 'us-east-2_orIgqtWuL',
-  userPoolWebClientId: '2dvee3b3li9evm3m55lgdho93o',
+  userPoolId: 'us-east-2_QT7DXCIqb',
+  userPoolWebClientId: '3k9gm3rokhdbq0dv9vob71b0n3',
 };
 
 /*
- * For easier debugging in development mode, you can import the following file
+ * For easier debugging in development mode, you can import the following fileus-east-2_QT7DXCIqb
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
  *
  * This import should be commented out in production mode because it will have a negative impact
