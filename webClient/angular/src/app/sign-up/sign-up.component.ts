@@ -17,6 +17,8 @@ export class SignUpComponent {
 
   sms = new FormControl('');
   fullName = new FormControl('');
+  email = new FormControl('');
+  address = new FormControl('');
 
   private busy_ = new BehaviorSubject(false);
   public busy = this.busy_.asObservable();
@@ -30,7 +32,7 @@ export class SignUpComponent {
     this.errorMessage_.next('');
     this.busy_.next(true);
     try {
-      await this.auth.signUp(this.sms.value, this.fullName.value);
+      await this.auth.signUp(this.sms.value, this.fullName.value, this.email.value, this.address.value);
       await this.auth.signIn(this.sms.value);
       this.router.navigate(['/enter-secret-code']);
     } catch (err) {
